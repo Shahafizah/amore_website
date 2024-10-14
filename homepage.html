@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Amore Coffee Homepage</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('images/coffee_shop_background.jpg');
+            background-size: cover;
+            background-position: center;
+            backdrop-filter: blur(10px);
+        }
+        .overlay {
+            display: none; 
+        }
+
+        .container {
+            background: rgba(210, 179, 122, 0.9); 
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            text-align: center;
+            margin-top: 100px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Banner Section */
+        .banner {
+            text-align: center;
+            padding: 200px 410px;
+            background: #467451;
+            position: relative; 
+        }
+
+        .banner img {
+            border-radius: 10px;
+            margin-top: -100px;
+        }
+
+        .banner h2 {
+            color: #ffffff;
+            font-size: 50px;
+            margin-top: -20px;
+        }
+
+        .order-now-button {
+            font-family: 'Copperplate'; 
+            position: absolute;
+            top: 80%; 
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px 30px;
+            background-color: #ff6347;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px; 
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .order-now-button:hover {
+            background-color: #e5533b;
+        }
+
+
+        /* Menu Section */
+        #menu {
+            padding: 100px 250px;
+            text-align: center;
+            font-family: 'Copperplate'; 
+            background: linear-gradient(to right, rgb(188, 163, 119), rgb(125, 114, 91));
+        }
+
+        #menu h2 {
+            font-size: 50px;
+            color: #fff; 
+            margin-top: 10px;
+            width: 100%;
+        }
+        #menu h2 a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        #menu h2 a:hover {
+            color: #ff6347; 
+        }
+
+        #menu .images-container {
+            display: grid;
+            gap: 30px; 
+            justify-items: center; 
+        }
+
+        #menu img {
+            width: 200px; 
+            height: 210px;
+            border-radius: 10px; 
+            object-fit: cover; 
+        }
+
+        /* Special Section */
+        #special {
+            padding: 130px 259px;
+            text-align: center;
+            font-family: 'Copperplate'; 
+            background: #467451;
+        }
+
+        #special h2 {
+            font-size: 50px;
+            color: #fff; 
+            margin-top: -30px;
+            width: 100%;
+        }
+        #special h2 a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        #special h2 a:hover {
+            color: #ff6347; 
+        }
+
+        #special .images-container {
+            display: grid;
+            gap: 20px; 
+            justify-items: center; 
+            position: relative;
+        }
+
+        #special .images-container img {
+            width: 1000px;
+            height: 400px;
+            border-radius: 10px;
+            object-fit: cover;
+            filter: blur(3px); 
+        }
+
+        .more-info-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px 30px;
+            background-color: #ff6347;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .more-info-button:hover {
+            background-color: #e5533b;
+        }
+
+        /* Location Section #53803b*/
+        #lct {
+            padding: 20px 309px;
+            text-align: center;
+            background:  linear-gradient(to right, rgb(188, 163, 119), rgb(125, 114, 91));
+        }
+
+        #lct h2 {
+            font-size: 50px;
+            color: #ffffff;
+            font-family: 'Copperplate'; 
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #lct p {
+            font-size: 18px;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        #lct img {
+            width: 900px;
+            height: 500px;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #006241;
+            color: white;
+            padding: 10px 5px;
+            text-align: center;
+        }
+
+        header {
+            background:  #004b32;
+            width: 100%;
+            height: 60px;
+            z-index: 3;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            color: #ffffff;
+            font-size: 30px;
+            font-family: 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-family: 'Times New Roman', serif;
+            letter-spacing: 3px;
+            font-size: 15px;
+            color: #ffffff;
+            margin: 0 10px;
+            padding: 0 10px;
+        }
+
+        nav a:hover {
+            color: #ff6347;
+        }
+
+        .sign-in-link {
+            background-color: #ff6347;
+            padding: 5px 15px;
+            border-radius: 5px;
+            color: #ffffff;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .sign-in-link:hover {
+            background-color: #e5533b;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Amore Coffee</div>
+        <nav>
+            <a href="homepage.html">HOME</a>
+            <a href="about_us.html">ABOUT US</a>
+            <a href="contact_us.html">CONTACT US</a>
+            <a href="menu.html">MENU</a>
+            <a href="Login_form.html" class="sign-in-link">SIGN IN</a> 
+        </nav>
+    </header>
+
+    <div class="banner">
+        <img src="images/Amore_Logo.png" alt="Amore Coffee">
+        <h2>Welcome to Amore Coffee</h2>
+        <a href="menu.html" class="order-now-button">Order Now</a>
+    </div>      
+
+    <section id="menu">
+        <h2>
+            <a href="menu.html">Choose Your Meals</a>
+        </h2>            
+        <div class="image-container">
+            <img src="images/coffee_img_7.jpg" alt="img1">
+            <img src="images/coffee_img_4.jpg" alt="img2">
+            <img src="images/coffee_img_5.jpg" alt="img3">
+            <img src="images/coffee_img_8.jpg" alt="img4">
+            <img src="images/coffee_img_3.jpg" alt="img5">
+        </div>
+    </section>
+
+    <section id="special">
+        <h2>
+           <a href="special_menu.html"> Our Special Menu</a>
+        </h2>
+        <div class="images-container">
+            <img src="images/coffee_img_7.jpg" alt="Coffee">
+            <a href="special_menu.html" class="more-info-button">More Info</a>
+        </div>
+    </section>
+
+    <section id="lct">
+        <h2>Our Location</h2>
+        <p>We would love to hear from you!</p>
+        <p>Location: RN 12, Pusat Pelajar UiTM 2, 94300 Kota Samarahan, Sarawak</p>
+        <a href="https://maps.app.goo.gl/QP47zkh3fYcdfVFF7" target="_blank">
+            <img src="images/Amore_Coffee_map.jpg" alt="Map Location">
+        </a>
+    </section>    
+
+    <footer>
+        <p>&copy; 2024 Amore Coffee. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Amore Coffee Dessert Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, rgb(177, 151, 103), rgb(113, 102, 79));
+            text-align: center;
+        }
+
+        header {
+            background: #004b32;
+            width: 100%;
+            height: 60px;
+            z-index: 10;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            color: #ffffff;
+            font-size: 30px;
+            font-family: 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-family: 'Times New Roman', serif;
+            letter-spacing: 3px;
+            font-size: 15px;
+            color: #ffffff;
+            margin: 0 10px;
+            padding: 0 10px;
+        }
+
+        nav a:hover {
+            color: #ff6347; 
+        }
+
+        .menu-section {
+            padding: 100px 20px 20px;
+        }
+
+        .menu-title {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .food-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .food-item {
+            display: inline-block;
+            margin: 20px;
+            width: 200px;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .food-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .food-item p {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .food-item:hover {
+            transform: scale(1.05);
+        }
+
+        .back-button {
+            position: fixed;
+            top: 100px;
+            left: -10px; 
+            background-color: #004b32;
+            color: white;
+            padding: 10px 40px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #ff6347; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Amore Coffee</div>
+        <nav>
+            <a href="homepage.html">HOME</a>
+            <a href="about_us.html">ABOUT US</a>
+            <a href="contact_us.html">CONTACT US</a>
+            <a href="menu.html">MENU</a>
+        </nav>
+    </header>
+
+    <section class="menu-section">
+        <h1 class="menu-title">Dessert Menu</h1>
+        <div class="food-container">
+            <div class="food-item">
+                <img src="images/almond_tiramisu.jpg" alt="Almond Tiramisu Cake">
+                <p>Almond Tiramisu Cake - RM13.90</p>
+            </div>
+            <div class="food-item">
+                <img src="images/cheesecake.jpg" alt="New York Cheese Cake">
+                <p>New York Cheese Cake - RM13.90</p>
+            </div>
+            <div class="food-item">
+                <img src="images/Velvet_cake.jpg" alt="Red Velvet Cake">
+                <p>Red Velvet Cake - RM13.90</p>
+            </div>
+            <div class="food-item">
+                <img src="images/strawberry_donut.jpg" alt="Strawberry Donut">
+                <p>Strawberry Donut - RM6.90</p>
+            </div>
+            <div class="food-item">
+                <img src="images/raspberry_donut.jpg" alt="Raspberry Donut">
+                <p>Raspberry Donut - RM6.90</p>
+            </div>
+            <div class="food-item">
+                <img src="images/chocolate_donut.jpg" alt="Chocolate Donut">
+                <p>Chocolate Donut - RM6.90</p>
+            </div>
+            <div class="food-item">
+                <img src="images/chocolate_muffin.jpg" alt="Chocolate Chip Muffin">
+                <p>Chocolate Chip Muffin - RM7.90</p>
+            </div>
+            <div class="food-item">
+                <img src="images/velvet_muffin.jpg" alt="Red Velvet Muffin">
+                <p>Red Velvet Muffin - RM7.90</p>
+            </div>
+            <div class="food-item">
+                <img src="images/apple_lattice.jpg" alt="Apple Lattice">
+                <p>Apple Lattice - RM4.90</p>
+            </div>
+            <div class="food-item">
+                <img src="images/butter_croissant.jpg" alt="Butter Croissant">
+                <p>Butter Croissant - RM7.90</p>
+            </div>
+            <div class="food-item">
+                <img src="images/cinnamon_roll.jpg" alt="Cinnamon Roll">
+                <p>Cinnamon Roll - RM8.20</p>
+            </div>
+        </div>
+
+        <button class="back-button" onclick="history.back()">Back</button>
+    </section>
+</body>
+</html>

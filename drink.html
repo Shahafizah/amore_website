@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Amore Coffee Drinks Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, rgb(177, 151, 103), rgb(113, 102, 79));
+            text-align: center;
+        }
+
+        header {
+            background: #004b32;
+            width: 100%;
+            height: 60px;
+            z-index: 10;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            color: #ffffff;
+            font-size: 30px;
+            font-family: 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-family: 'Times New Roman', serif;
+            letter-spacing: 3px;
+            font-size: 15px;
+            color: #ffffff;
+            margin: 0 10px;
+            padding: 0 10px;
+        }
+
+        nav a:hover {
+            color: #ff6347; 
+        }
+
+        .menu-section {
+            padding: 100px 20px 20px;
+        }
+
+        .menu-title {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .drinks-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .drink-item {
+            display: inline-block;
+            margin: 20px;
+            width: 200px;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .drink-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .drink-item p {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .drink-item:hover {
+            transform: scale(1.05);
+        }
+
+        .back-button {
+            position: fixed;
+            top: 100px;
+            left: -10px; 
+            background-color: #004b32;
+            color: white;
+            padding: 10px 40px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #ff6347; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Amore Coffee</div>
+        <nav>
+            <a href="homepage.html">HOME</a>
+            <a href="about_us.html">ABOUT US</a>
+            <a href="contact_us.html">CONTACT US</a>
+            <a href="menu.html">MENU</a>
+        </nav>
+    </header>
+
+    <section class="menu-section">
+        <h1 class="menu-title">Iced Blended Coffee</h1>
+        <div class="drinks-container">
+            <div class="drink-item">
+                <img src="images/mochacinno.jpg" alt="Mochacinno">
+                <p>Mochacinno - RM11.50</p>
+            </div>
+            <div class="drink-item">
+                <img src="images/cappuccino.jpg" alt="Cappuccino">
+                <p>Cappuccino - RM10.90</p>
+            </div>
+            <div class="drink-item">
+                <img src="images/caramello_cappuccino.jpg" alt="Caramello Cappuccino">
+                <p>Caramello Cappuccino - RM11.50</p>
+            </div>
+            <div class="drink-item">
+                <img src="images/hazelnut_cappuccino.jpg" alt="Hazelnut Cappuccino">
+                <p>Hazelnut Cappuccino - RM11.50</p>
+            </div>
+            <div class="drink-item">
+                <img src="images/biscotti_cappuccino.jpg" alt="Biscotti Cappuccino">
+                <p>Biscotti Cappuccino - RM11.50</p>
+            </div>
+            <div class="drink-item">
+                <img src="images/salted_caramel_cappuccino.jpg" alt="Salted Caramello Cappuccino">
+                <p>Salted Caramello Cappuccino - RM11.50</p>
+            </div>
+        </div>
+
+        <h1 class="menu-title">Beverages</h1>
+        <div class="drinks-container">
+            <div class="drink-item">
+                <img src="images/americano.jpg" alt="Americano">
+                <p>Americano - RM9.50</p>
+            </div>
+            <div class="drink-item">
+                <img src="images/mochacinno.jpg" alt="Mochacinno">
+                <p>Mochacinno - RM10.50</p>
+            </div>
+            <div class="drink-item">
+                <img src="images/cappuccino.jpg" alt="Cappuccino">
+                <p>Cappuccino - RM9.50</p>
+            </div>
+            <div class="drink-item">
+                <img src="images/caramello_cappuccino.jpg" alt="Caramello Cappuccino">
+                <p>Caramello Cappuccino - RM10.50</p>
+            </div>
+            <div class="drink-item">
+                <img src="images/hazelnut_cappuccino.jpg" alt="Hazelnut Cappuccino">
+                <p>Hazelnut Cappuccino - RM10.50</p>
+            </div>
+            <div class="drink-item">
+                <img src="images/salted_caramel_cappuccino.jpg" alt="Salted Caramello Cappuccino">
+                <p>Salted Caramello Cappuccino - RM10.50</p>
+            </div>
+            <div class="drink-item">
+                <img src="images/cafe_latte.jpg" alt="Cafe Latte">
+                <p>Cafe Latte - RM9.50</p>
+            </div>
+            <div class="drink-item">
+                <img src="images/caramello_latte.jpg" alt="Caramello Latte">
+                <p>Caramello Latte - RM10.50</p>
+            </div>
+            <div class="drink-item">
+                <img src="images/hazelnut_latte.jpg" alt="Hazelnut Latte">
+                <p>Hazelnut Latte - RM10.50</p>
+            </div>
+            <div class="drink-item">
+                <img src="images/salted_caramello_latte.jpg" alt="Salted Caramello Latte">
+                <p>Salted Caramello Latte - RM10.50</p>
+            </div>
+            <div class="drink-item">
+                <img src="images/vanilla_latte.jpg" alt="Vanilla Latte">
+                <p>Vanilla Latte - RM10.50</p>
+            </div>
+        </div>
+
+        <h1 class="menu-title">Non-Espresso Drinks</h1>
+        <div class="drinks-container">
+            <div class="drink-item">
+                <img src="images/brown_sugar_boba.jpg" alt="Brown Sugar Boba Milk">
+                <p>Brown Sugar Boba Milk - RM10.90</p>
+            </div>
+            <div class="drink-item">
+                <img src="images/chocolate.jpg" alt="Chocolate">
+                <p>Chocolate - RM9.50</p>
+            </div>
+            <div class="drink-item">
+                <img src="images/classic_dark_chocolate.jpg" alt="Classic Dark Chocolate">
+                <p>Classic Dark Chocolate - RM10.50</p>
+            </div>
+            <div class="drink-item">
+                <img src="images/vanilla.jpg" alt="Vanilla">
+                <p>Vanilla - RM10.50</p>
+            </div>
+            <div class="drink-item">
+                <img src="images/caramello_vanilla.jpg" alt="Caramello Vanilla">
+                <p>Caramello Vanilla - RM10.50</p>
+            </div>
+            <div class="drink-item">
+                <img src="images/caramello_chocolate.jpg" alt="Caramello Chocolate">
+                <p>Caramello Chocolate - RM10.50</p>
+            </div>
+            <div class="drink-item">
+                <img src="images/hazelnut_chocolate.jpg" alt="Hazelnut Chocolate">
+                <p>Hazelnut Chocolate - RM10.50</p>
+            </div>
+            <div class="drink-item">
+                <img src="images/salted_caramello_chocolate.jpg" alt="Salted Caramello Chocolate">
+                <p>Salted Caramello Chocolate - RM10.50</p>
+            </div>
+            <div class="drink-item">
+                <img src="images/matcha.jpg" alt="Matcha (Green Tea)">
+                <p>Matcha (Green Tea) - RM10.50</p>
+            </div>
+        </div>
+
+        <h1 class="menu-title">Tea</h1>
+        <div class="drinks-container">
+            <div class="drink-item">
+                <img src="images/english_breakfast_tea.jpg" alt="English Breakfast Tea">
+                <p>English Breakfast Tea - RM5.50</p>
+            </div>
+            <div class="drink-item">
+                <img src="images/earl_grey.jpg" alt="Earl Grey">
+                <p>Earl Grey - RM5.50</p>
+            </div>
+        </div>
+
+        <button class="back-button" onclick="history.back()">Back</button>
+    </section>
+</body>
+</html>

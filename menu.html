@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Amore Coffee Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, rgb(177, 151, 103), rgb(113, 102, 79));
+            text-align: center;
+        }
+
+        header {
+            background: #004b32;
+            width: 100%;
+            height: 60px;
+            z-index: 10;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            color: #ffffff;
+            font-size: 30px;
+            font-family: 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-family: 'Times New Roman', serif;
+            letter-spacing: 3px;
+            font-size: 15px;
+            color: #ffffff;
+            margin: 0 10px;
+            padding: 0 10px;
+        }
+
+        nav a:hover {
+            color: #ff6347; 
+        }
+
+        .menu-section {
+            padding: 100px 20px 20px;
+        }
+
+        .menu-title {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .food-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .food-item {
+            display: inline-block;
+            margin: 20px;
+            width: 200px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .food-item img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .food-item:hover {
+            transform: scale(1.1);
+        }
+
+        .food-label {
+            font-size: 18px;
+            color: #333;
+            margin-top: 10px;
+            font-family: 'Times New Roman', serif;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Amore Coffee</div>
+        <nav>
+            <a href="homepage.html">HOME</a>
+            <a href="about_us.html">ABOUT US</a>
+            <a href="contact_us.html">CONTACT US</a>
+            <a href="menu.html">MENU</a>
+        </nav>
+    </header>
+
+    <section class="menu-section">
+        <h1 class="menu-title">Explore Our Menu</h1>
+        <div class="food-container">
+            <div class="food-item" onclick="location.href='food.html'">
+                <img src="images/logo_food.png" alt="Food">
+                <div class="food-label">Food</div>
+            </div>
+            <div class="food-item" onclick="location.href='drink.php'">
+                <img src="images/logo_drink.jpg" alt="Drink">
+                <div class="food-label">Drink</div>
+            </div>
+            <div class="food-item" onclick="location.href='dessert.html'">
+                <img src="images/logo_dessert.png" alt="Dessert">
+                <div class="food-label">Dessert</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

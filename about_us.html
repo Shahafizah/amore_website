@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Amore Coffee</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, rgb(177, 151, 103), rgb(113, 102, 79));
+        }
+
+        .wrap {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background:  #004b32;
+            width: 100%;
+            height: 60px;
+            z-index: 10;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            color: #ffffff;
+            font-size: 30px;
+            font-family: 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-family: 'Times New Roman', serif;
+            letter-spacing: 3px;
+            font-size: 15px;
+            color: #ffffff;
+            margin: 0 10px;
+            padding: 0 10px;
+        }
+
+        nav a:hover {
+            color: #ff6347;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; 
+            padding: 30px;
+            margin-top: 80px; 
+        }
+
+        .text-container {
+            text-align: left; 
+            max-width: 50%; 
+            margin-right: 50px; 
+        }
+
+        .text-container h2 {
+            font-size: xx-large;
+            margin-top: 100px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .text-container p {
+            margin-bottom: 10px;
+        }
+
+        .image-container {
+            max-width: 50%;
+        }
+
+        .image-container img {
+            max-width: 100%; 
+            margin-top: 40px;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Amore Coffee</div>
+        <nav>
+            <a href="homepage.html">HOME</a>
+            <a href="about_us.html">ABOUT US</a>
+            <a href="contact_us.html">CONTACT US</a>
+            <a href="menu.html">MENU</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="text-container">
+            <h2>About Us</h2>
+            <p>Welcome to Amore Coffee, a cozy haven nestled near the UITM campus in Samarahan, established in 2023. 
+                We take pride in serving high-quality coffee and creating a warm, inviting atmosphere for our customers. 
+                At Amore Coffee, we believe in the perfect blend of tradition and innovation.
+                While we cherish the charm of the classic coffee shop experience, we're excited to embrace modern conveniences to enhance your visit.</p>
+            <p>Our upcoming Click & Sip Ordering System is designed to streamline your experience, allowing you to place orders online with ease. 
+                This system will reduce waiting times and ensure that your favorite coffee is just a few clicks away. 
+                Whether you're here to study, meet friends, or simply enjoy a moment of tranquility, Amore Coffee is committed to making each visit a delightful experience.</p>
+        </div>
+        <div class="image-container">
+            <img src="images/coffee_img_2.jpeg" alt="Amore Coffee">
+        </div>
+    </section>
+</body>
+</html>

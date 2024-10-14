@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Amore Coffee Food Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, rgb(177, 151, 103), rgb(113, 102, 79));
+            text-align: center;
+        }
+
+        header {
+            background: #004b32;
+            width: 100%;
+            height: 60px;
+            z-index: 10;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            color: #ffffff;
+            font-size: 30px;
+            font-family: 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-family: 'Times New Roman', serif;
+            letter-spacing: 3px;
+            font-size: 15px;
+            color: #ffffff;
+            margin: 0 10px;
+            padding: 0 10px;
+        }
+
+        nav a:hover {
+            color: #ff6347; 
+        }
+
+        .menu-section {
+            padding: 100px 20px 20px;
+        }
+
+        .menu-title {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .food-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .food-item {
+            display: inline-block;
+            margin: 20px;
+            width: 200px;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .food-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .food-item p {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .food-item:hover {
+            transform: scale(1.05);
+        }
+
+        .back-button {
+            position: fixed;
+            top: 100px;
+            left: -10px; 
+            background-color: #004b32;
+            color: white;
+            padding: 10px 40px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #ff6347; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Amore Coffee</div>
+        <nav>
+            <a href="homepage.html">HOME</a>
+            <a href="about_us.html">ABOUT US</a>
+            <a href="contact_us.html">CONTACT US</a>
+            <a href="menu.html">MENU</a>
+        </nav>
+    </header>
+
+    <section class="menu-section">
+        <h1 class="menu-title">Food Menu</h1>
+        <div class="food-container">
+            <div class="food-item">
+                <img src="images/nasi_lemak.png" alt="Nasi Lemak">
+                <p>Nasi Lemak Set - RM6.50</p>
+            </div>
+            <div class="food-item">
+                <img src="images/soup.png" alt="Mushroom Soup">
+                <p>Mushroom Soup Set - RM6.50</p>
+            </div>
+            <div class="food-item">
+                <img src="images/bolognese.png" alt="Spaghetti Bolognese Beef">
+                <p>Spaghetti Bolognese Beef - RM13.90</p>
+            </div>
+            <div class="food-item">
+                <img src="images/carbonara.png" alt="Spaghetti Carbonara">
+                <p>Spaghetti Carbonara - RM13.90</p>
+            </div>
+            <div class="food-item">
+                <img src="images/bolognese.png" alt="Spaghetti Bolognese Chicken">
+                <p>Spaghetti Bolognese Chicken - RM13.90</p>
+            </div>
+            <div class="food-item">
+                <img src="images/chicken_shop.png" alt="Chicken Chop">
+                <p>Chicken Chop - RM15.90</p>
+            </div>
+            <div class="food-item">
+                <img src="images/wing.png" alt="Chicken Wings">
+                <p>Chicken Wings - RM12.90</p>
+            </div>
+            <div class="food-item">
+                <img src="images/fish.png" alt="Fish and Chips">
+                <p>Fish & Chip - RM13.90</p>
+            </div>
+            <div class="food-item">
+                <img src="images/fries.png" alt="French Fries">
+                <p>French Fries - RM5.90</p>
+            </div>
+            <div class="food-item">
+                <img src="images/wedges.png" alt="Cheezy Wedges">
+                <p>Cheezy Wedges - RM7.90</p>
+            </div>
+        </div>
+
+        <button class="back-button" onclick="history.back()">Back</button>
+    </section>
+</body>
+</html>
